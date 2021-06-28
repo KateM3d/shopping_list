@@ -1,0 +1,76 @@
+.header,
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 60px;
+    background: linear-gradient(#527318, #899857);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.inputField {
+    padding: 15px;
+    width: 40vw;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #fff;
+}
+
+.btn {
+    padding: 20px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #FFD98E;
+}
+
+body {
+    background-image: url(./assets/img/image2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    background-color: 899857;
+}
+
+.listItem {
+    background-color: #FFD98E;
+    list-style-type: none;
+    height: 6vh;
+    width: 40vw;
+    text-align: center;
+    color: #5A3921;
+    font-size: larger;
+    border-bottom: 2px solid #fff;
+    border-radius: 20px;
+    overflow-wrap: break-word;
+}
+
+.toAdd {
+    display: flex;
+    flex-direction: column;
+}
+
+.completedTask {
+    background: #FFB677;
+    color: #527318;
+    font-weight: bold;
+    text-decoration: line-through;
+    transition: all 2s ease;
+}
+
+@media all and (max-width:800px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media all and (max-width:500px) {
+    h1 {
+        font-size: 20px;
+    }
+}
